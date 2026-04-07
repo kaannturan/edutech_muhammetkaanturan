@@ -168,7 +168,16 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                               actions: [
                                 TextButton(
-                                  onPressed: () => Navigator.pop(context),
+                                  onPressed: () {
+                                    // 1. Önce diyaloğu kapatıyoruz
+                                    Navigator.pop(context);
+
+                                    // 2. Sonra verileri temizliyoruz
+                                    setState(() {
+                                      _emailController.clear();
+                                      _passwordController.clear();
+                                    });
+                                  },
                                   child: const Text("Kapat"),
                                 ),
                               ],
