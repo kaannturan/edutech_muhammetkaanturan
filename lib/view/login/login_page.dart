@@ -145,6 +145,7 @@ class _LoginPageState extends State<LoginPage> {
                         borderSide: BorderSide.none,
                       ),
                     ),
+                    validator: Validators.password,
                   ),
                   const SizedBox(height: 32),
                   SizedBox(

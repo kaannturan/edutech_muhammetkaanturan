@@ -1,4 +1,4 @@
-import "package:edutech_muhammetkaanturan/view/login_page.dart";
+import "package:edutech_muhammetkaanturan/view/login/login_page.dart";
 import "package:flutter/material.dart";
 
 void main() {
@@ -10,6 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: LoginPage());
+    return MaterialApp(home: LoginPage(), debugShowCheckedModeBanner: false);
   }
 }

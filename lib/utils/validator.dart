@@ -11,4 +11,16 @@ class Validators {
 
     return null;
   }
+
+  static String? password(String? value) {
+    if (value == null || value.isEmpty) {
+      return 'Şifre boş olamaz';
+    }
+
+    if (value.length < 16) {
+      return 'Şifre en az 16 karakter olmalı';
+    }
+
+    return null;
+  }
 }
